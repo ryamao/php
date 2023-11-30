@@ -1,0 +1,149 @@
+/*
+ * RESULT
+ */
+
+.result {
+  max-width: 800px;
+  margin: 20px auto 0 auto;
+  padding: 0 20px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+}
+
+.result__text {
+  margin: 0;
+}
+
+.result__text--accept {
+  color: #00f;
+}
+
+.result__text--reject {
+  color: #f00;
+}
+
+/*
+ * INPUT
+ */
+
+.input {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.input__text {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+}
+
+.input__text--empty {
+  color: #fff;
+  background-color: #ddd;
+}
+
+.input__text--error {
+  color: #f00;
+  background-color: #ddd;
+}
+
+/*
+ * TABLE
+ */
+
+.table-and-history {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.table-wrapper {
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+}
+
+.table__symbol {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.table__state {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.table__state--source {
+  width: 150px;
+  position: relative;
+}
+
+.table__state--current {
+  background-color: #f0f0f0;
+}
+
+.table__state--start::before {
+  content: ">";
+  position: absolute;
+  left: 40px;
+}
+
+.table__state--accept::after {
+  content: "*";
+  position: absolute;
+  right: 40px;
+}
+
+/*
+ * HISTORY
+ */
+
+.history {
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.history__list {
+  width: 240px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0.5em;
+  font-size: 18px;
+}
+
+.history__state {
+  background-color: #ddd;
+  margin-top: -0.5em;
+  padding: 6px 20px;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 10px) 0,
+    100% 50%,
+    calc(100% - 10px) 100%,
+    0 100%
+  );
+}
+
+.history__symbol {
+  text-align: right;
+  background: linear-gradient(to right, #ccc, #fff 80%);
+  margin-left: 25%;
+  margin-top: -0.5em;
+  padding: 6px 20px;
+  clip-path: polygon(100% 0, 10px 0, 0 50%, 10px 100%, 100% 100%);
+}

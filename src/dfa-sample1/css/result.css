@@ -1,0 +1,37 @@
+.dfa-result {
+  display: flex;
+  align-items: center;
+}
+
+.dfa-result__title {
+  margin-right: 30px;
+}
+
+.dfa-result p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dfa-result__text--accept {
+  color: #00f;
+}
+
+.dfa-result__text--reject {
+  color: #f00;
+}
+
+.dfa-table__inner {
+  border-collapse: collapse;
+  width: 120px;
+  height: 120px;
+}
+
+.dfa-table__header,
+.dfa-table__data {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.dfa-table__current-state {
+  background: #ddd;
+}

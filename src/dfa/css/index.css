@@ -1,0 +1,144 @@
+/*
+ * INPUT
+ */
+
+.input {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.input__text {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  margin: 20px 20px 0 20px;
+}
+
+.input__text--empty {
+  color: #fff;
+  background-color: #ddd;
+}
+
+.input__text--error {
+  color: #f00;
+  background-color: #ddd;
+}
+
+/*
+ * FORM
+ */
+
+.form-and-help {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.form-wrapper {
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.form__buttons {
+  margin-top: 30px;
+  display: flex;
+}
+
+.form__buttons button {
+  padding: 10px;
+}
+
+.form__edit {
+  margin-left: 20px;
+}
+
+/*
+ * TABLE
+ */
+
+.table {
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+}
+
+.table button {
+  font-size: 16px;
+}
+
+.table__controls-inner {
+  padding: 5px;
+}
+
+.table__control-button {
+  width: 40px;
+  height: 40px;
+}
+
+.table__control-button:not(:first-child) {
+  margin-left: 5px;
+}
+
+.table__symbol {
+  padding: 5px;
+}
+
+.table__symbol-button {
+  width: 40px;
+  height: 40px;
+}
+
+.table__state {
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+.table__state--source {
+  position: relative;
+}
+
+.table__state--current {
+  background-color: #f0f0f0;
+}
+
+.table__state--start::before {
+  content: ">";
+  position: absolute;
+  left: 20px;
+}
+
+.table__state--accept::after {
+  content: "*";
+  position: absolute;
+  right: 20px;
+}
+
+/*
+ * HELP
+ */
+
+.help {
+  margin-top: 20px;
+  margin-left: 20px;
+  letter-spacing: 0.05em;
+}
+
+.help__text {
+  margin: 0;
+}
+
+.help__text--current {
+  display: inline-block;
+  width: 40px;
+  margin: 0 4px;
+  background-color: #f0f0f0;
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+.dfa-table__controls-inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.dfa-table__controls button {
+  width: 60px;
+  height: 100%;
+}
+
+.dfa-table__controls button:not(:first-child) {
+  margin-left: 4px;
+}
+
+.dfa-table__symbol {
+  padding: 4px;
+}
+
+.dfa-table__symbol button {
+  width: 60px;
+  height: 100%;
+}
+
+.dfa-info {
+  width: 400px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.dfa-info__text--state {
+  display: inline-block;
+  width: 40px;
+  margin: 0 5px;
+  background-color: #ddd;
+  text-align: center;
+}

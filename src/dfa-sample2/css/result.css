@@ -1,0 +1,46 @@
+.dfa-result {
+  width: 400px;
+  margin: 20px auto 0 auto;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+}
+
+.dfa-result__text {
+  margin: 0;
+}
+
+.dfa-result__text--accept {
+  color: #00f;
+}
+
+.dfa-result__text--reject {
+  color: #f00;
+}
+
+.dfa-history {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.dfa-history__list {
+  list-style-type: none;
+  padding: 20px 100px;
+  font-size: 24px;
+}
+
+.dfa-history__state {
+  background-color: #ddd;
+  margin-top: -0.5em;
+  padding: 10px;
+  clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
+}
+
+.dfa-history__symbol {
+  text-align: right;
+  background: linear-gradient(to right, #ccc, #fff 80%);
+  margin-left: 100px;
+  margin-top: -0.5em;
+  padding: 10px;
+  clip-path: polygon(100% 0, 10% 0, 0 50%, 10% 100%, 100% 100%);
+}

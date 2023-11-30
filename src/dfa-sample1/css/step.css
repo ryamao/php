@@ -1,0 +1,29 @@
+.dfa-input__text--left {
+  color: #ccc;
+}
+
+.dfa-input__text--current {
+  color: #000;
+  font-weight: bold;
+}
+
+.dfa-input__text--right {
+  color: #000;
+  font-weight: normal;
+}
+
+.dfa-table__inner {
+  border-collapse: collapse;
+  width: 120px;
+  height: 120px;
+}
+
+.dfa-table__header,
+.dfa-table__data {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.dfa-table__current-state {
+  background: #ddd;
+}
