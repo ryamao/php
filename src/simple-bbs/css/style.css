@@ -1,0 +1,130 @@
+/*
+ * COMMON
+ */
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * HEADER
+ */
+
+.header {
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 20px #000;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header__nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.header__nav-item:not(:first-child) {
+  margin-left: 20px;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*
+ * POSTS
+ */
+
+main {
+  margin-top: 60px;
+}
+
+.posts__empty {
+  padding: 10px 60px;
+}
+
+.posts__item {
+  width: 800px;
+  padding: 20px 0 0 10px;
+  margin: 20px 0;
+}
+
+.posts__item:not(:first-child) {
+  border-top: 1px solid #ccc;
+}
+
+.posts__item-header {
+  display: flex;
+  align-items: baseline;
+}
+
+.posts__item-seq::after {
+  content: ":";
+}
+
+.posts__item-name {
+  font-weight: bold;
+}
+
+.posts__item-timestamp {
+  font-size: 14px;
+  color: #888;
+  margin-left: 10px;
+}
+
+.posts__item-content {
+  margin-top: 4px;
+}
+
+/*
+ * FORM
+ */
+
+.form {
+  padding: 20px 0;
+}
+
+.form__inner {
+  width: 800px;
+  margin-left: 40px;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.form__item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.form .form__item:not(:first-child) {
+  border-top: 1px solid #ccc;
+}
+
+.form__label {
+  margin-right: 20px;
+}
+
+.form__text-input {
+  width: 200px;
+}
+
+.form__textarea {
+  width: 600px;
+  height: 80px;
+}
